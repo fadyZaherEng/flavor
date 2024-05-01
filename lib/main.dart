@@ -15,7 +15,7 @@ FutureOr<void> main() async {
   );
   try {
     final token = await FirebaseMessaging.instance.getToken();
-    print(token);
+    print("token: $token");
   } catch (e) {}
   runApp(const MyApp());
 }
