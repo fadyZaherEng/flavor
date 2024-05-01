@@ -1,8 +1,11 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flavor/flavors.dart';
 import 'package:flutter/material.dart';
 
 class homeScreen extends StatefulWidget {
   final String title;
+
   const homeScreen({
     super.key,
     required this.title,
@@ -16,7 +19,9 @@ class _homeScreenState extends State<homeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -26,10 +31,9 @@ class _homeScreenState extends State<homeScreen> {
               F.getIcon,
               width: 50,
               height: 50,
+              matchTextDirection: true,
             ),
-            const SizedBox(
-              width: 10,
-            ),
+            const SizedBox(width: 10),
             Text(
               widget.title,
               style: TextStyle(

@@ -32,9 +32,11 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: homeScreen(
-        title: F.getBodyTitle,
+      title: F.name,
+      theme: ThemeData(
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: homeScreen(title: F.getBodyTitle),
     );
   }
 }
