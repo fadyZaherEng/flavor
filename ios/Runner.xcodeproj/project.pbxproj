@@ -605,6 +605,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavor.RunnerTests;
@@ -623,6 +624,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavor.RunnerTests;
@@ -639,6 +641,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flavor.RunnerTests;
@@ -848,6 +851,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69B6545C94131758CCF51130 /* Pods-RunnerTests.debug-development.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = RunnerTests;
 			};
 			name = "Debug-development";
@@ -856,6 +860,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 114CEE7C35B01856C6AF4724 /* Pods-RunnerTests.profile-development.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = RunnerTests;
 			};
 			name = "Profile-development";
@@ -864,6 +869,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC57145FC4208130C35607FC /* Pods-RunnerTests.release-development.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = RunnerTests;
 			};
 			name = "Release-development";
@@ -872,6 +878,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F219785D0EC31E5D06A2453F /* Pods-RunnerTests.debug-production.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = RunnerTests;
 			};
 			name = "Debug-production";
@@ -880,6 +887,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6066F11FDF3718E31674B96 /* Pods-RunnerTests.profile-production.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = RunnerTests;
 			};
 			name = "Profile-production";
@@ -888,6 +896,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 715EE221714FD353C5715EE1 /* Pods-RunnerTests.release-production.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = RunnerTests;
 			};
 			name = "Release-production";
