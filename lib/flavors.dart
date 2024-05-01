@@ -35,9 +35,9 @@ class F {
   static String get getIcon{
     switch (appFlavor) {
       case Flavor.development:
-        return 'assets/images/development.png';
+        return "assets/images/development.png";
       case Flavor.production:
-        return 'assets/images/production.png';
+        return "assets/images/production.png";
       default:
         return 'assets/images/development.png';
     }
