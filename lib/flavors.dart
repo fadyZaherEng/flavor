@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 enum Flavor {
@@ -22,17 +20,19 @@ class F {
         return 'title';
     }
   }
-  static String get getBodyTitle{
-  switch (appFlavor) {
-  case Flavor.development:
-  return 'Flavor Dev Body';
-  case Flavor.production:
-  return 'Flavor Prod Body';
-  default:
-  return 'title';
+
+  static String get getBodyTitle {
+    switch (appFlavor) {
+      case Flavor.development:
+        return 'Flavor Dev Body';
+      case Flavor.production:
+        return 'Flavor Prod Body';
+      default:
+        return 'title';
+    }
   }
-}
-  static String get getIcon{
+
+  static String get getIcon {
     switch (appFlavor) {
       case Flavor.development:
         return "assets/images/development.png";
@@ -42,7 +42,8 @@ class F {
         return 'assets/images/development.png';
     }
   }
-  static Color get getBodyColor{
+
+  static Color get getBodyColor {
     switch (appFlavor) {
       case Flavor.development:
         return Colors.black;
