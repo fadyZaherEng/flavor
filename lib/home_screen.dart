@@ -16,6 +16,8 @@ class _homeScreenState extends State<homeScreen> {
       appBar: AppBar(),
       body: Center(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(F.getIcon,width: 50,height: 50,),
             const SizedBox(width: 10,),
