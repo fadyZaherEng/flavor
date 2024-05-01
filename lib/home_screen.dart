@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 
 class homeScreen extends StatefulWidget {
   final String title;
-  const homeScreen({super.key,required this.title,});
+  const homeScreen({
+    super.key,
+    required this.title,
+  });
 
   @override
   State<homeScreen> createState() => _homeScreenState();
@@ -19,13 +22,19 @@ class _homeScreenState extends State<homeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(F.getIcon,width: 50,height: 50,),
-            const SizedBox(width: 10,),
+            Image.asset(
+              F.getIcon,
+              width: 50,
+              height: 50,
+            ),
+            const SizedBox(
+              width: 10,
+            ),
             Text(
               widget.title,
               style: TextStyle(
                 fontSize: 20,
-                fontWeight:FontWeight.w600,
+                fontWeight: FontWeight.w600,
                 color: F.getBodyColor,
               ),
             ),

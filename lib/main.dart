@@ -13,6 +13,10 @@ FutureOr<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  try {
+    final token = await FirebaseMessaging.instance.getToken();
+    print(token);
+  } catch (e) {}
   runApp(const MyApp());
 }
 
@@ -24,16 +28,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  @override
-  void didChangeDependencies() async {
-    super.initState();
-   try{
-     final token = await FirebaseMessaging.instance.getToken();
-     print(token);
-   }catch(e){
-   }
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
