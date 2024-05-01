@@ -1,3 +1,4 @@
+import 'package:flavor/flavors.dart';
 import 'package:flutter/material.dart';
 
 class homeScreen extends StatefulWidget {
@@ -14,8 +15,19 @@ class _homeScreenState extends State<homeScreen> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text(
-          widget.title,
+        child: Row(
+          children: [
+            Image(image: AssetImage(F.getIcon),),
+            const SizedBox(width: 10,),
+            Text(
+              widget.title,
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight:FontWeight.w600,
+                color: F.getBodyColor,
+              ),
+            ),
+          ],
         ),
       ),
     );
