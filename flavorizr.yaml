@@ -1,14 +1,14 @@
 flavors:
   development:
      app:
-       name: "Flavor Dev"
+       name: "Flavor development"
      android:
         applicationId: "com.example.flavorDev"
      ios:
         bundleId: "com.example.flavorDev"
   production:
      app:
-       name: "Flavor Prod"
+       name: "Flavor production"
      android:
       applicationId: "com.example.flavorProd"
      ios:
