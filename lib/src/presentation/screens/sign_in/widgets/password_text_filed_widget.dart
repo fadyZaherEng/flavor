@@ -1,8 +1,6 @@
-import 'package:city_eye/src/config/theme/color_schemes.dart';
-import 'package:city_eye/src/core/resources/image_paths.dart';
-import 'package:city_eye/src/core/utils/constants.dart';
+import 'package:flavor/flavors.dart';
+import 'package:flavor/src/config/theme/color_schemes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class PasswordTextFieldWidget extends StatefulWidget {
   final TextEditingController controller;
@@ -27,7 +25,7 @@ class PasswordTextFieldWidget extends StatefulWidget {
 
 class _PasswordTextFieldWidgetState extends State<PasswordTextFieldWidget> {
   bool _showPassword = true;
-  String _passwordIcon = ImagePaths.showPassword;
+  IconData _passwordIcon = Icons.remove_red_eye_outlined;
   final FocusNode _focus = FocusNode();
   bool _textFieldHasFocus = false;
 
@@ -49,29 +47,39 @@ class _PasswordTextFieldWidgetState extends State<PasswordTextFieldWidget> {
       controller: widget.controller,
       onChanged: widget.onChange,
       style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-          fontWeight: Constants.fontWeightRegular,
-          color: widget.errorMessage == null
-              ? ColorSchemes.black
-              : ColorSchemes.redError,
+          color: widget.errorMessage != null
+              ? ColorSchemes.redError
+              : !F.isProduction
+                  ? ColorSchemes.white
+                  : ColorSchemes.black,
           letterSpacing: -0.13),
       obscureText: _showPassword,
       decoration: InputDecoration(
         focusedBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: ColorSchemes.border),
+            borderSide: BorderSide(
+              color: !F.isProduction ? ColorSchemes.white : ColorSchemes.black,
+            ),
             borderRadius: BorderRadius.circular(12)),
         enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: ColorSchemes.border),
+            borderSide: BorderSide(
+              color: !F.isProduction ? ColorSchemes.white : ColorSchemes.black,
+            ),
             borderRadius: BorderRadius.circular(12)),
         errorBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: ColorSchemes.redError),
             borderRadius: BorderRadius.circular(12)),
         border: OutlineInputBorder(
-            borderSide: const BorderSide(color: ColorSchemes.border),
+            borderSide: BorderSide(
+              color: !F.isProduction ? ColorSchemes.white : ColorSchemes.black,
+            ),
             borderRadius: BorderRadius.circular(12)),
         errorText: widget.errorMessage,
         labelText: widget.labelTitle,
         suffixIcon: IconButton(
-          icon: SvgPicture.asset(_passwordIcon),
+          icon: Icon(
+            _passwordIcon,
+            color: F.isProduction ? ColorSchemes.logo : ColorSchemes.primary,
+          ),
           onPressed: _toggleVisibilityIcon,
         ),
         contentPadding:
@@ -86,9 +94,9 @@ class _PasswordTextFieldWidgetState extends State<PasswordTextFieldWidget> {
     setState(() {
       _showPassword = !_showPassword;
       if (_showPassword) {
-        _passwordIcon = ImagePaths.showPassword;
+        _passwordIcon = Icons.remove_red_eye_outlined;
       } else {
-        _passwordIcon = ImagePaths.headPassword;
+        _passwordIcon = Icons.remove_red_eye;
       }
     });
   }
@@ -96,7 +104,6 @@ class _PasswordTextFieldWidgetState extends State<PasswordTextFieldWidget> {
   TextStyle _labelStyle(BuildContext context, bool hasFocus) {
     if (hasFocus || widget.controller.text.isNotEmpty) {
       return Theme.of(context).textTheme.bodyLarge!.copyWith(
-            fontWeight: Constants.fontWeightRegular,
             color: widget.errorMessage == null
                 ? ColorSchemes.gray
                 : ColorSchemes.redError,
@@ -104,7 +111,6 @@ class _PasswordTextFieldWidgetState extends State<PasswordTextFieldWidget> {
           );
     } else {
       return Theme.of(context).textTheme.bodyLarge!.copyWith(
-            fontWeight: Constants.fontWeightRegular,
             color: widget.errorMessage == null
                 ? ColorSchemes.gray
                 : ColorSchemes.redError,

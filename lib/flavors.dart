@@ -53,4 +53,6 @@ class F {
         return Colors.red;
     }
   }
+
+  static bool get isProduction => appFlavor == Flavor.production;
 }
