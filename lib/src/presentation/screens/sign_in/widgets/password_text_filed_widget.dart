@@ -25,7 +25,7 @@ class PasswordTextFieldWidget extends StatefulWidget {
 
 class _PasswordTextFieldWidgetState extends State<PasswordTextFieldWidget> {
   bool _showPassword = true;
-  IconData _passwordIcon = Icons.remove_red_eye_outlined;
+  IconData _passwordIcon = Icons.visibility_off_outlined;
   final FocusNode _focus = FocusNode();
   bool _textFieldHasFocus = false;
 
@@ -96,7 +96,7 @@ class _PasswordTextFieldWidgetState extends State<PasswordTextFieldWidget> {
       if (_showPassword) {
         _passwordIcon = Icons.remove_red_eye_outlined;
       } else {
-        _passwordIcon = Icons.remove_red_eye;
+        _passwordIcon = Icons.visibility_off_outlined;
       }
     });
   }
