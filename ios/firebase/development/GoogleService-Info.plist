@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-    <string>com.example.flavorDev</string>
+	<string>com.example.flavorDev</string>
 	<key>PROJECT_ID</key>
 	<string>flavor-a3582</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:327214522186:ios:00993bd7f5b81ed689abb3</string>
+	<string>1:327214522186:ios:faa7568cabc19a9b89abb3</string>
 </dict>
 </plist>
