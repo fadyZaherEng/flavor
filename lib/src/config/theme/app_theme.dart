@@ -24,8 +24,8 @@ class AppTheme {
           statusBarBrightness: Brightness.light,
         ),
       ),
-      inputDecorationTheme: InputDecorationTheme(
-        contentPadding: const EdgeInsets.all(8),
+      inputDecorationTheme: const InputDecorationTheme(
+        contentPadding: EdgeInsets.all(8),
         hintStyle: TextStyle(
             fontSize: 14,
             color: ColorSchemes.gray,
@@ -39,25 +39,25 @@ class AppTheme {
             fontSize: 12,
             color: ColorSchemes.redError,
             fontWeight: FontWeight.normal),
-        enabledBorder: const OutlineInputBorder(
+        enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: ColorSchemes.gray, width: 1),
           borderRadius: BorderRadius.all(
             Radius.circular(10),
           ),
         ),
-        focusedBorder: const OutlineInputBorder(
+        focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: ColorSchemes.gray, width: 1),
           borderRadius: BorderRadius.all(
             Radius.circular(10),
           ),
         ),
-        errorBorder: const OutlineInputBorder(
+        errorBorder: OutlineInputBorder(
           borderSide: BorderSide(color: ColorSchemes.redError, width: 1),
           borderRadius: BorderRadius.all(
             Radius.circular(10),
           ),
         ),
-        focusedErrorBorder: const OutlineInputBorder(
+        focusedErrorBorder: OutlineInputBorder(
           borderSide: BorderSide(color: ColorSchemes.redError, width: 1),
           borderRadius: BorderRadius.all(
             Radius.circular(10),
@@ -72,7 +72,7 @@ class AppTheme {
           color: ColorSchemes.primary,
           size: 24,
         ),
-        unselectedIconTheme: IconThemeData(
+        unselectedIconTheme: const IconThemeData(
           color: ColorSchemes.gray,
           size: 24,
         ),
