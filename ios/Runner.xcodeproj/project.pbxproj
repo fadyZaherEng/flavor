@@ -234,7 +234,7 @@
 			buildPhases = (
 				804EEB20F26682144FA96C64 /* [CP] Check Pods Manifest.lock */,
 				840CFE7D2BEA36A000C946A5 /* ShellScript */,
-				8441E3662BEA2A87000ACB24 /* Setup Firebase Environment GoogleService-Info.plist */,
+				8441E3662BEA2A87000ACB24 /* Copy GoogleService-Info.plist */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				D494FD0ED84B7EB8195F3509 /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
@@ -393,7 +393,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\n";
 		};
-		8441E3662BEA2A87000ACB24 /* Setup Firebase Environment GoogleService-Info.plist */ = {
+		8441E3662BEA2A87000ACB24 /* Copy GoogleService-Info.plist */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,7 +402,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Setup Firebase Environment GoogleService-Info.plist";
+			name = "Copy GoogleService-Info.plist";
 			outputFileListPaths = (
 			);
 			outputPaths = (
