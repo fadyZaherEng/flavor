@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: homeScreen(title: F.getBodyTitle),
+      home: const homeScreen(),
     );
   }
 }

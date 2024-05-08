@@ -5,12 +5,7 @@ import 'package:flavor/src/presentation/screens/sign_in/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
 class homeScreen extends StatefulWidget {
-  final String title;
-
-  const homeScreen({
-    super.key,
-    required this.title,
-  });
+  const homeScreen({super.key});
 
   @override
   State<homeScreen> createState() => _homeScreenState();
@@ -53,7 +48,7 @@ class _homeScreenState extends State<homeScreen> {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  widget.title,
+                  F.getBodyTitle,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w600,
