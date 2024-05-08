@@ -24,9 +24,20 @@ class F {
   static String get getBodyTitle {
     switch (appFlavor) {
       case Flavor.development:
-        return 'Flavor development Body';
+        return 'Flavor development Sign In';
       case Flavor.production:
-        return 'Flavor production Body';
+        return 'Flavor production Sign In';
+      default:
+        return 'title';
+    }
+  }
+
+  static String get getTitle {
+    switch (appFlavor) {
+      case Flavor.development:
+        return 'Development';
+      case Flavor.production:
+        return 'Production';
       default:
         return 'title';
     }

@@ -21,34 +21,55 @@ class _homeScreenState extends State<homeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        centerTitle: true,
+        title: Text(
+          F.getTitle,
+          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: F.getBodyColor,
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+              ),
+        ),
       ),
       body: Center(
-        child: InkWell(
-          onTap: () {
-            Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (context) => const SignInScreen()));
-          },
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Image.asset(
-                F.getIcon,
-                width: 50,
-                height: 50,
-                matchTextDirection: true,
-              ),
-              const SizedBox(width: 10),
-              Text(
-                widget.title,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: F.getBodyColor,
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: InkWell(
+            onTap: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const SignInScreen()));
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(
+                  F.getIcon,
+                  width: 50,
+                  height: 50,
+                  matchTextDirection: true,
                 ),
-              ),
-            ],
+                const SizedBox(width: 10),
+                Text(
+                  widget.title,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: F.getBodyColor,
+                  ),
+                ),
+                const SizedBox(width: 4),
+                Expanded(
+                  child: Icon(
+                    Icons.arrow_forward_ios,
+                    color: F.getBodyColor,
+                    size: 25,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
