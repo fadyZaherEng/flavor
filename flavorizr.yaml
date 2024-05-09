@@ -13,3 +13,17 @@ flavors:
       applicationId: "com.example.flavorProd"
      ios:
       bundleId: "com.example.flavorProd"
+  staging:
+    app:
+      name: "Flavor staging"
+    android:
+      applicationId: "com.example.flavorStage"
+    ios:
+      bundleId: "com.example.flavorStage"
+  testing:
+    app:
+      name: "Flavor testing"
+    android:
+      applicationId: "com.example.flavorTest"
+    ios:
+      bundleId: "com.example.flavorTest"

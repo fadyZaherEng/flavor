@@ -3,5 +3,5 @@
 
 FLUTTER_TARGET=lib/main_development.dart
 ASSET_PREFIX=development
-BUNDLE_NAME=Flavor Dev
-BUNDLE_DISPLAY_NAME=Flavor Dev
+BUNDLE_NAME=Flavor development
+BUNDLE_DISPLAY_NAME=Flavor development
