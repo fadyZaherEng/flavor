@@ -86,7 +86,6 @@
 		7D1C40E969D813540E87F5BC /* Pods-Runner.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release-staging.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release-staging.xcconfig"; sourceTree = "<group>"; };
 		7F44F3E0FFB82E5F8C1D9072 /* stagingDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stagingDebug.xcconfig; path = Flutter/stagingDebug.xcconfig; sourceTree = "<group>"; };
 		808543DB4EA1F9121D17FAE4 /* testingDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = testingDebug.xcconfig; path = Flutter/testingDebug.xcconfig; sourceTree = "<group>"; };
-		843AB1002BEB8CF200BCB969 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		846F6E722BEA3C55007A316B /* firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = firebase; sourceTree = "<group>"; };
 		84775AD12BEB71ED0060CE3D /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		847E54752BEB6CF50027D288 /* RunnerProfile-production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RunnerProfile-production.entitlements"; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		84B1CD4D2BECB9B600105937 /* RunnerRelease-testing.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "RunnerRelease-testing.entitlements"; sourceTree = "<group>"; };
 		84B1CD4E2BECB9B600105937 /* RunnerProfile-staging.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "RunnerProfile-staging.entitlements"; sourceTree = "<group>"; };
 		84B1CD4F2BECB9B700105937 /* RunnerProfile-testing.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "RunnerProfile-testing.entitlements"; sourceTree = "<group>"; };
+		84F3E0192BECF1D0000F8D83 /* Runner.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = Runner.entitlements; path = "../../../../Downloads/flavor-feature-add-new-apps/ios/Runner/Runner.entitlements"; sourceTree = "<group>"; };
 		948C683407ACB916650FC016 /* stagingProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stagingProfile.xcconfig; path = Flutter/stagingProfile.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
@@ -230,8 +230,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
-				843AB1002BEB8CF200BCB969 /* Runner.entitlements */,
-				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				84F3E0192BECF1D0000F8D83 /* Runner.entitlements */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
 				97C147021CF9000F007C117D /* Info.plist */,
@@ -240,6 +239,7 @@
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 				84B1CD4A2BECB9B600105937 /* RunnerDebug-staging.entitlements */,
+				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				84B1CD4B2BECB9B600105937 /* RunnerDebug-testing.entitlements */,
 				84B1CD4E2BECB9B600105937 /* RunnerProfile-staging.entitlements */,
 				84B1CD4F2BECB9B700105937 /* RunnerProfile-testing.entitlements */,
