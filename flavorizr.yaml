@@ -29,17 +29,3 @@ flavors:
         applicationId: "com.example.flutterProd"
       ios:
         bundleId: "com.example.flutterProd"
-  staging:
-    app:
-      name: "flutter production"
-    android:
-      applicationId: "com.example.flavorStage"
-    ios:
-      bundleId: "com.example.flavorStaging"
-  testing:
-    app:
-      name: "flutter production"
-    android:
-      applicationId: "com.example.flavorTest"
-    ios:
-      bundleId: "com.example.flavorTest"

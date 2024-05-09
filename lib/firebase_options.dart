@@ -22,9 +22,15 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return F.appFlavor==Flavor.production? android:androidDevelopment;
+        return F.appFlavor == Flavor.production
+            ? android
+            : F.appFlavor == Flavor.flutterdev
+                ? androidFlutterDev
+                : F.appFlavor == Flavor.flutterprod
+                    ? androidFlutterProd
+                    : androidDevelopment;
       case TargetPlatform.iOS:
-        return F.appFlavor == Flavor.production? ios:iosDevelopment;
+        return F.appFlavor == Flavor.production ? ios : iosDevelopment;
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
@@ -58,6 +64,7 @@ class DefaultFirebaseOptions {
     projectId: 'flavor-a3582',
     storageBucket: 'flavor-a3582.appspot.com',
   );
+
   static const FirebaseOptions androidDevelopment = FirebaseOptions(
     apiKey: 'AIzaSyDFSdktJrpQUlfpajW8wYwwfTNmuPlCeWQ',
     appId: '1:327214522186:android:adba5129284cfa4a89abb3',
@@ -65,7 +72,20 @@ class DefaultFirebaseOptions {
     projectId: 'flavor-a3582',
     storageBucket: 'flavor-a3582.appspot.com',
   );
-
+  static const FirebaseOptions androidFlutterProd = FirebaseOptions(
+    apiKey: 'AIzaSyDFSdktJrpQUlfpajW8wYwwfTNmuPlCeWQ',
+    appId: '1:327214522186:android:f39b9de6d264a2be89abb3',
+    messagingSenderId: '327214522186',
+    projectId: 'flavor-a3582',
+    storageBucket: 'flavor-a3582.appspot.com',
+  );
+  static const FirebaseOptions androidFlutterDev = FirebaseOptions(
+    apiKey: 'AIzaSyDFSdktJrpQUlfpajW8wYwwfTNmuPlCeWQ',
+    appId: '1:327214522186:android:1ea096e3af7c6a9189abb3',
+    messagingSenderId: '327214522186',
+    projectId: 'flavor-a3582',
+    storageBucket: 'flavor-a3582.appspot.com',
+  );
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyB4VBTTyvusuboM7zdyqhE4nQEj1ydktjc',
     appId: '1:327214522186:ios:00993bd7f5b81ed689abb3',
