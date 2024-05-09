@@ -83,7 +83,7 @@ class F {
       case Flavor.staging:
         return ColorSchemes.gray;
       case Flavor.testing:
-        return ColorSchemes.white;
+        return ColorSchemes.redError;
       default:
         return Colors.red;
     }
