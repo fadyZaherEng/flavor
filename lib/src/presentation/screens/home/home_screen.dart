@@ -18,7 +18,7 @@ class _homeScreenState extends State<homeScreen> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          F.getTitle,
+          F.title,
           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: F.getBodyColor,
                 fontSize: 20,
@@ -48,7 +48,7 @@ class _homeScreenState extends State<homeScreen> {
                 ),
                 const SizedBox(width: 10),
                 Text(
-                  F.getBodyTitle,
+                  F.title,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w600,

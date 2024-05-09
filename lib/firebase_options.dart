@@ -24,7 +24,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return F.appFlavor==Flavor.production? android:androidDevelopment;
       case TargetPlatform.iOS:
-        return F.appFlavor==Flavor.production? ios:iosDevelopment;
+        return F.appFlavor == Flavor.production? ios:iosDevelopment;
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:

@@ -13,3 +13,19 @@ flavors:
       applicationId: "com.example.flavorProd"
      ios:
       bundleId: "com.example.flavorProd"
+
+  flutterDev:
+     app:
+       name: "flutter development"
+     android:
+        applicationId: "com.example.flutterDev"
+     ios:
+      bundleId: "com.example.flutterDev"
+
+  flutterProd:
+      app:
+        name: "flutter production"
+      android:
+        applicationId: "com.example.flutterProd"
+      ios:
+        bundleId: "com.example.flutterProd"

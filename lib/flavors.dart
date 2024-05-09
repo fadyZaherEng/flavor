@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 enum Flavor {
   development,
   production,
+  flutterdev,
+  flutterprod, staging,
 }
 
 class F {
@@ -16,28 +18,10 @@ class F {
         return 'Flavor development';
       case Flavor.production:
         return 'Flavor production';
-      default:
-        return 'title';
-    }
-  }
-
-  static String get getBodyTitle {
-    switch (appFlavor) {
-      case Flavor.development:
-        return 'Flavor development Sign In';
-      case Flavor.production:
-        return 'Flavor production Sign In';
-      default:
-        return 'title';
-    }
-  }
-
-  static String get getTitle {
-    switch (appFlavor) {
-      case Flavor.development:
-        return 'Development';
-      case Flavor.production:
-        return 'Production';
+      case Flavor.flutterdev:
+        return 'flutter development';
+      case Flavor.flutterprod:
+        return 'flutter production';
       default:
         return 'title';
     }
