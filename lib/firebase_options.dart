@@ -47,16 +47,6 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCzUEtcny0FusAEb9sYJJf1V13kIIOTvEc',
-    appId: '1:327214522186:web:8de5a5de444d09a289abb3',
-    messagingSenderId: '327214522186',
-    projectId: 'flavor-a3582',
-    authDomain: 'flavor-a3582.firebaseapp.com',
-    storageBucket: 'flavor-a3582.appspot.com',
-    measurementId: 'G-3V95949ZKR',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDFSdktJrpQUlfpajW8wYwwfTNmuPlCeWQ',
     appId: '1:327214522186:android:c1f46cdcaab0935089abb3',
@@ -102,6 +92,22 @@ class DefaultFirebaseOptions {
     storageBucket: 'flavor-a3582.appspot.com',
     iosBundleId: 'com.example.flavor',
   );
+  static const FirebaseOptions iosFlutterDevelopment = FirebaseOptions(
+    apiKey: 'AIzaSyB4VBTTyvusuboM7zdyqhE4nQEj1ydktjc',
+    appId: '1:327214522186:ios:a9042cf678f1079189abb3',
+    messagingSenderId: '327214522186',
+    projectId: 'flavor-a3582',
+    storageBucket: 'flavor-a3582.appspot.com',
+    iosBundleId: 'com.example.flavor',
+  );
+  static const FirebaseOptions iosFlutterProduction = FirebaseOptions(
+    apiKey: 'AIzaSyB4VBTTyvusuboM7zdyqhE4nQEj1ydktjc',
+    appId: '1:327214522186:ios:d89e47643ac4c65189abb3',
+    messagingSenderId: '327214522186',
+    projectId: 'flavor-a3582',
+    storageBucket: 'flavor-a3582.appspot.com',
+    iosBundleId: 'com.example.flavor',
+  );
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyB4VBTTyvusuboM7zdyqhE4nQEj1ydktjc',
     appId: '1:327214522186:ios:bf64a2288d15d00989abb3',
@@ -119,5 +125,15 @@ class DefaultFirebaseOptions {
     authDomain: 'flavor-a3582.firebaseapp.com',
     storageBucket: 'flavor-a3582.appspot.com',
     measurementId: 'G-9JP061SDQ0',
+  );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCzUEtcny0FusAEb9sYJJf1V13kIIOTvEc',
+    appId: '1:327214522186:web:8de5a5de444d09a289abb3',
+    messagingSenderId: '327214522186',
+    projectId: 'flavor-a3582',
+    authDomain: 'flavor-a3582.firebaseapp.com',
+    storageBucket: 'flavor-a3582.appspot.com',
+    measurementId: 'G-3V95949ZKR',
   );
 }
