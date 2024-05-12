@@ -455,7 +455,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\nif [ \"${CONFIGURATION}\" == \"Debug-production\" ] || [ \"${CONFIGURATION}\" == \"Release-production\" ] || [ \"${CONFIGURATION}\" == \"Profile-production\" ];\nthen\ncp \"${PROJECT_DIR}/firebase/production/GoogleService-Info.plist\" \"${PLIST_DESTINATION}/GoogleService-Info.plist\"\nelif [ \"${CONFIGURATION}\" == \"Debug-development\" ] || [ \"${CONFIGURATION}\" == \"Release-development\" ] || [ \"${CONFIGURATION}\" == \"Profile-development\" ];\nthen\ncp \"${PROJECT_DIR}/firebase/development/GoogleService-Info.plist\" \"${PLIST_DESTINATION}/GoogleService-Info.plist\"\nfi\n";
+			shellScript = "PLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\nif [ \"${CONFIGURATION}\" == \"Debug-production\" ] || [ \"${CONFIGURATION}\" == \"Release-production\" ] || [ \"${CONFIGURATION}\" == \"Profile-production\" ];\nthen\ncp \"${PROJECT_DIR}/firebase/production/GoogleService-Info.plist\" \"${PLIST_DESTINATION}/GoogleService-Info.plist\"\nelif [ \"${CONFIGURATION}\" == \"Debug-development\" ] || [ \"${CONFIGURATION}\" == \"Release-development\" ] || [ \"${CONFIGURATION}\" == \"Profile-development\" ];\nthen\ncp \"${PROJECT_DIR}/firebase/development/GoogleService-Info.plist\" \"${PLIST_DESTINATION}/GoogleService-Info.plist\"\n\nelif [ \"${CONFIGURATION}\" == \"Debug-flutterDev\" ] || [ \"${CONFIGURATION}\" == \"Release-flutterDev\" ] || [ \"${CONFIGURATION}\" == \"Profile-flutterDev\" ];\nthen\ncp \"${PROJECT_DIR}/firebase/flutter_dev/GoogleService-Info.plist\" \"${PLIST_DESTINATION}/GoogleService-Info.plist\"\nelif [ \"${CONFIGURATION}\" == \"Debug-flutterProd\" ] || [ \"${CONFIGURATION}\" == \"Release-flutterProd\" ] || [ \"${CONFIGURATION}\" == \"Profile-flutterProd\" ];\nthen\ncp \"${PROJECT_DIR}/firebase/flutter_prod/GoogleService-Info.plist\" \"${PLIST_DESTINATION}/GoogleService-Info.plist\"\n\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1191,6 +1191,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6436A79776E0DC70D988D11A /* Pods-Runner.debug-flutterdev.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = Runner;
 			};
@@ -1210,6 +1211,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03EB503D237F4CC9A23C9539 /* Pods-Runner.release-flutterdev.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = Runner;
 			};
@@ -1219,6 +1221,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA18F18668D1090659A7CE56 /* Pods-Runner.debug-flutterprod.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = Runner;
 			};
@@ -1228,6 +1231,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3363A2FC6BE9EBE1F7BA5E9F /* Pods-Runner.profile-flutterprod.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = Runner;
 			};
@@ -1237,6 +1241,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56F3FABA1A2C17A3B9D1CD22 /* Pods-Runner.release-flutterprod.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				DEVELOPMENT_TEAM = 47KHBF5C35;
 				PRODUCT_NAME = Runner;
 			};

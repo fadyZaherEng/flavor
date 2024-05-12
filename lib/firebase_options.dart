@@ -30,7 +30,11 @@ class DefaultFirebaseOptions {
                     ? androidFlutterProd
                     : androidDevelopment;
       case TargetPlatform.iOS:
-        return F.appFlavor == Flavor.production ? ios : iosDevelopment;
+        return F.appFlavor == Flavor.production ? ios : F.appFlavor == Flavor.flutterdev
+            ? iosFlutterDevelopment
+            : F.appFlavor == Flavor.flutterprod
+            ? iosFlutterProduction
+            : iosDevelopment;
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
